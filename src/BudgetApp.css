@@ -16,7 +16,6 @@
 
 .row {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -24,6 +23,7 @@
     flex: 0 0 33.33%;
     margin-bottom: 20px;
     outline: 2px solid red;
+    margin: 10px;
     /* Add outline color here */
 }
 
