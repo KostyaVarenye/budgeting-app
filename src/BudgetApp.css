@@ -2,45 +2,48 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
-  }
-  
-  .navbar {
+}
+
+.navbar {
     background-color: #f0f0f0;
     padding: 10px;
-  }
-  
-  .container {
+}
+
+.container {
     flex: 3;
     padding: 20px;
-  }
-  
-  .row {
+}
+
+.row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-  
-  .col-lg-4 {
+}
+
+.col-lg-4 {
     flex: 0 0 33.33%;
     margin-bottom: 20px;
-    outline: 2px solid red; /* Add outline color here */
-  }
-  
+    outline: 2px solid red;
+    /* Add outline color here */
+}
 
-  .content {
+
+.content {
     padding: 20px;
     background-color: #fff;
-    outline: 2px solid green; /* Add outline color here */
-  }
-  
-  .col-lg-12 {
+    outline: 2px solid green;
+    /* Add outline color here */
+}
+
+.col-lg-12 {
     flex-basis: 100%;
     margin-bottom: 20px;
-    outline: 2px solid orange; /* Add outline color here */
-  }
-  
-  .graph {
-    outline: 2px solid purple; /* Add outline color here */
+    outline: 2px solid orange;
+    /* Add outline color here */
+}
+
+.graph {
+    outline: 2px solid purple;
+    /* Add outline color here */
     margin-top: 20px;
-  }
-  
+}
