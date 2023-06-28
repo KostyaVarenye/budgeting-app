@@ -1,12 +1,12 @@
 import * as d3 from "d3";
 import { useEffect, useRef } from "react";
-const Barchart = ({ data }) => {
+const Barchart = ({ data, cWidth, cHeight }) => {
   const ref = useRef();
 
   useEffect(() => {
     const margin = { top: 30, right: 30, bottom: 70, left: 60 },
-      width = 800 - margin.left - margin.right,
-      height = 400 - margin.top - margin.bottom;
+      width = cWidth - margin.left - margin.right,
+      height = cHeight - margin.top - margin.bottom;
 
     const svg = d3
       .select(ref.current)
@@ -56,7 +56,7 @@ const Barchart = ({ data }) => {
       .attr("fill", "red");
   }, [data]);
 
-  return <svg width={800} height={400} ref={ref} />;
+  return <svg width={cWidth} height={cHeight} ref={ref} />;
 };
 
 export default Barchart;
