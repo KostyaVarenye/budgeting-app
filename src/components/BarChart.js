@@ -54,7 +54,7 @@ const Barchart = ({ data, cWidth, cHeight }) => {
       .attr("width", x.bandwidth())
       .attr("height", (d) => height - y(d.expenditure)) // height is just the expenditure
       .attr("fill", "red");
-  }, [data]);
+  });
 
   return <svg width={cWidth} height={cHeight} ref={ref} />;
 };

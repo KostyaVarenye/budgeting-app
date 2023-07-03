@@ -43,7 +43,6 @@ const sundialData = {
 const BudgetApp = () => {
   return (
     <div className="budget-app">
-      <nav className="navbar">{/* Navigation bar content */}</nav>
       <div className="container">
         <div className="row">
           <div className="col-lg-4">
