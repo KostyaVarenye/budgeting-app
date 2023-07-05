@@ -1,16 +1,17 @@
 import React from "react";
+import BudgetApp from "../BudgetApp";
 
 const Home = () => {
   return (
     <div
       style={{
         display: "flex",
-        justifyContent: "Right",
-        alignItems: "Right",
+        justifyContent: "Center",
+        alignItems: "Center",
         height: "100vh",
       }}
     >
-      <h1>Home</h1>
+      <BudgetApp />
     </div>
   );
 };

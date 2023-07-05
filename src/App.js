@@ -10,23 +10,21 @@ import About from "./pages/about";
 import AnnualReport from "./pages/annual";
 import SignUp from "./pages/signup";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <header className="App-header">
         <Router>
           <Navbar />
           <Routes>
-            <Route path="/" exact component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/annual" component={AnnualReport} />
-            <Route path="/sign-up" component={SignUp} />
+            <Route path="/" element={ <Home /> } />
+            <Route path="/about" element={ <About /> } />
+            <Route path="/annual" element={ <AnnualReport /> } />
+            <Route path="/sign-up" element={ <SignUp /> } />
+            <Route path="/budget" element={ <BudgetApp /> } /> {/* Add this line */}
           </Routes>
         </Router>
-        <BudgetApp />
       </header>
     </div>
   );
 }
-
-export default App;

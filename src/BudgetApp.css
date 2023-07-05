@@ -47,3 +47,8 @@
     /* Add outline color here */
     margin-top: 20px;
 }
+
+.chart-container {
+    width: 500px;
+    height: 500px;
+  }
